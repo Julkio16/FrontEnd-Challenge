@@ -1,11 +1,9 @@
 import React from 'react'
 import { Avatar } from 'primereact/avatar';
-export function Avatares({url}) {
-
- 
+export default function Avatares(props) { 
     return (
         <div>
-            <Avatar image={url} className="p-mr-2" size="xlarge" shape="circle" />
+            <Avatar image={props.url} className="p-mr-2" size="xlarge" shape="circle"  />
         </div>
     )
 }

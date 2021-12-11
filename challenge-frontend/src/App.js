@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
-import 'primereact/resources/themes/rhea/theme.css';
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
 import './App.css';
 import { Header } from './componets/Header/Header';
@@ -25,7 +25,7 @@ function App() {
         } />
       </div>
       <div className='Avatares'>
-        <ListOfAvatares breeds = {breeds}/>
+        <ListOfAvatares breed ={breed}/>
       </div>
       <div className='MainContent'>
         <ListOfImages breed = {breed}/>

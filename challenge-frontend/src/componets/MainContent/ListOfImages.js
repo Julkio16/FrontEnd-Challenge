@@ -7,7 +7,6 @@ export default function ListOfImages(props) {
     const raza = props.breed ? props.breed : null;
 
     useEffect(() => {
-        console.log("list",raza);
         getImageBreed();
     }, [raza])
 
@@ -16,13 +15,10 @@ export default function ListOfImages(props) {
         setImages(a);
     }
 
-    const getImageDef = async () =>{
-         let a = await getImages();
-         setImages(a);
-    }
+    
     return (
         <div  className="p-grid p-justify-between p-align-center">
-            {images.map(image => <div className="p-col-12 p-md-6 p-lg-4"><Images url = {image.url} id = {image.id} key = {image.id}/></div>)}
+            {images.map(image => <div className="p-col-12 p-md-6 p-lg-4"><Images url = {image.url} id = {image.id} key = {image.id} data ={image} /></div>)}
         </div>
     )
 }
