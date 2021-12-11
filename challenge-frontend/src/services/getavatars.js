@@ -8,7 +8,8 @@ export default async  function getavatares(breedid) {
           return imagen.map(res =>{
               return {
                   url: res.url,
-                  name: res.breeds[0].name
+                  name: res.breeds[0].name,
+                  data: res
               }
           })  
 }

@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import FeaturingContent from '../Avatars/FeaturingContent';
+import './ListOfAvatar.css'
 
 import getbreeds from '../../services/getbreeds';
 import getavatares from '../../services/getavatars';
@@ -32,7 +33,7 @@ export  function ListOfAvatares() {
     }
     return (
         <div className='p-d-flex p-jc-evenly AvatarContenedor'>
-            {imagedata.map(image => <div className="p-mr-2" ><FeaturingContent url = {image[0].url} name = {image[0].name} key = {image.id}/></div>)}                                    
+            {imagedata.map(image => <div key = {image[0].id} className="p-mr-2" ><FeaturingContent url = {image[0].url} name = {image[0].name}  data = {image[0].data}/></div>)}                                    
         </div>
     )
 }
