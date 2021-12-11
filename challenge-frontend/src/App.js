@@ -5,7 +5,7 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
 import './App.css';
 import { Header } from './componets/Header/Header';
-import { ListOfAvatares } from './componets/ListAvatares/ListOfAvatares';
+import ListOfAvatares from './componets/ListAvatares/ListOfAvatares';
 import ListOfImages from './componets/MainContent/ListOfImages';
 
 function App() {
@@ -14,18 +14,16 @@ function App() {
   return (
     <Fragment>
       <div className='App-header'>
-        <Header onChange={
-          (id)=> {
-            setBreed(id)
-          }
-        } onCreate={
+        <Header onCreate={
           (ids) => {
             setBreeds(ids);
           }
+        } 
+         onChange={
+          (id)=> {
+            setBreed(id)
+          }
         } />
-      </div>
-      <div className='Avatares'>
-        <ListOfAvatares breed ={breed}/>
       </div>
       <div className='MainContent'>
         <ListOfImages breed = {breed}/>
