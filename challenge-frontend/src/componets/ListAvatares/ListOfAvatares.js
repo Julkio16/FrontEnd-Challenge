@@ -19,7 +19,7 @@ export  default function ListOfAvatares(props) {
         let a = await getbreeds();
         let b = a.map(breeds => breeds.id);
         b.sort(function() { return Math.random() - 0.5 });
-        let c = b.slice(1,7);
+        let c = b.slice(1,17);
         setBreedsids(c);
     }
     const getAvatarsForBreed = async (c) => {
