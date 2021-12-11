@@ -1,0 +1,28 @@
+.AvatarContenedor{
+    overflow: auto;
+}
+.AvatarContenedor::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.AvatarContenedor::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.AvatarContenedor::-webkit-scrollbar-button:increment,.AvatarContenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.AvatarContenedor::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.AvatarContenedor::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.AvatarContenedor::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}

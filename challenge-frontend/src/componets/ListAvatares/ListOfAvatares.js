@@ -31,8 +31,8 @@ export  function ListOfAvatares() {
         
     }
     return (
-        <div p-d-flex p-jc-between>
-            {imagedata.map(image => <div><FeaturingContent url = {image.url} name = {image.name} key = {image.id}/></div>)}                                    
+        <div className='p-d-flex p-jc-evenly AvatarContenedor'>
+            {imagedata.map(image => <div className="p-mr-2" ><FeaturingContent url = {image[0].url} name = {image[0].name} key = {image.id}/></div>)}                                    
         </div>
     )
 }
