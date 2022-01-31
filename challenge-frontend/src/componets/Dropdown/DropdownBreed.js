@@ -8,10 +8,9 @@ export function DropdownBreed(props) {
     const [name, setName] = useState([]);
     const [value, setValue] = useState(null);
 
-    useEffect(async () => {
+    useEffect( () => {
         async function fetchData(){
             setName(await getbreeds())
-            props.onCreate(name)
         }
         fetchData();        
     }, [])

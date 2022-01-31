@@ -9,24 +9,19 @@ import ListOfAvatares from './componets/ListAvatares/ListOfAvatares';
 import ListOfImages from './componets/MainContent/ListOfImages';
 
 function App() {
-  const [breed,setBreed] = useState(null);
-  const [breeds,setBreeds] = useState([]);
+  const [breed, setBreed] = useState(null);
   return (
     <Fragment>
       <div className='App-header'>
-        <Header onCreate={
-          (ids) => {
-            setBreeds(ids);
-          }
-        } 
-         onChange={
-          (id)=> {
-            setBreed(id)
-          }
-        } />
+        <Header 
+          onChange={
+            (id) => {
+              setBreed(id)
+            }
+          } />
       </div>
       <div className='MainContent'>
-        <ListOfImages breed = {breed}/>
+        <ListOfImages breed={breed} />
       </div>
     </Fragment>
   );

@@ -32,10 +32,10 @@ export default function FeaturingContent(props) {
                 <Dialog header={
                     props.data.title ? props.data.title : props.data.breeds[0] ? props.data.breeds[0].name : props.id
                 } visible={displayBasic2} style={{ width: '50vw' }} footer={renderFooter('displayBasic2')} onHide={() => onHide('displayBasic2')}>
-                    <Image key={props.key} src={props.url} alt={props.name} width='100%' height='100%' />
+                    <Image  src={props.url} alt={props.name} width='100%' height='100%' />
                     {
                         props.data.breeds[0] ?
-                            <p> {props.data.breeds[0].description}</p> : <p> 😒 No information avalible at the moment, we are working on it 😊</p>
+                            <p> {props.data.breeds[0].description}</p> : <p> No information avalible at the moment, we are working on it :)</p>
                     }
 
                 </Dialog>

@@ -2,3 +2,22 @@
     margin-bottom: 3vh;
     padding: 5vw;
   }
+
+
+  
+  @media only screen and (min-width: 576px) {
+    .Data ul{
+      columns: 1;
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .Data ul{
+      columns: 2;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .Data ul{
+      columns: 3;
+    }
+  }

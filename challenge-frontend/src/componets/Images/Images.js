@@ -34,7 +34,7 @@ export default function Images(props) {
                     <Image  src={props.url} alt={props.id} width='100%' height='100%' />
                     {
                         props.data.breeds[0] ?
-                        <p> {props.data.breeds[0].description}</p> : <p> 😒 No information avalible at the moment, we are working on it 😊</p>
+                        <p> {props.data.breeds[0].description}</p> : <p>  No information avalible at the moment, we are working on it :)</p>
                     }
                     
                 </Dialog>
